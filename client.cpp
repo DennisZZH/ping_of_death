@@ -11,13 +11,14 @@
 #include <netdb.h> 
 #include <errno.h>
 #include <netinet/ip_icmp.h>
+#include <cstring>
 
 #define PING_PKT_SIZE 64
 
 using namespace std;
 
 char* server_ip = "128.111.48.196";
-int port = 43141;
+int port = 27033;
 
 char* icmp_src = "192.168.222.1";
 char* icmp_dst = "192.168.222.2";
